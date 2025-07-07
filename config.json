@@ -1,0 +1,9 @@
+{
+  "url": "https://api.regatta-test.ddc.sze.hu/tabella",
+  "sleep": 5,
+  "payload": {
+    "start": 0,
+    "limit": 10000,
+    "_comment": "search: pl hajónév, kormányos, bow number stb"
+  }
+}
