@@ -2,7 +2,7 @@
 # Kékszalag API parser by Varga-Molnár Bertalan
 
 ## Futtatás
-A legújabb build letöltése és a *.zip* kicsomagolása. Ezután futtatni kell a `kekszalagApi.exe` alkalmazást. A lekérdezés eredménye a `kekszalag_data.json` fájlban lesz. Ezt kell excelben vagy vMixben, esetleg más feliratozó szoftverben megnyitni.
+A legújabb release letöltése és a *.zip* kicsomagolása. Ezután futtatni kell a `kekszalagApi.exe` alkalmazást. A lekérdezés eredménye a `kekszalag_data.json` fájlban lesz. Ezt kell excelben vagy vMixben, esetleg más feliratozó szoftverben megnyitni.
 
 ## Konfigurálás
 A `config.json` fájlban lehet beállítani, hogy a következő lekérdezés mit tartalmazzon.
