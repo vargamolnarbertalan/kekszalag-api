@@ -6,10 +6,10 @@ A legújabb release letöltése és a *.zip* kicsomagolása. Ezután futtatni ke
 
 ## Konfigurálás
 A `config.json` fájlban lehet beállítani, hogy a következő lekérdezés mit tartalmazzon.
-- url: API végpont teljes útvonala
+- url1: Fő Kékszalag API végpont teljes útvonala
+- url2: Vihar API kiegészítő a bow numberhez teljes útvonala
 - sleep: egész szám, másodpercben az az intervallum amilyen gyakran a lekérdezés megtörténjen
-- payload: a HTTP POST metódus body-ja (ezen belül az API saját kulcsait kell megadni pl limit vagy search)
-> Ha a `config_all.json` fájl tartalmával felülírjuk a `config.json`-t, akkor nincs szűrés a lekérdezésben és az eredménytábla az összes rekordot tartalmazni fogja a /tabella végpontról.
+- payload: a HTTP POST metódus body-ja az url1 lekérdezéséhez (ezen belül az API saját kulcsait kell megadni pl limit vagy search)
 
 ## Mentés
 A konfigurációs fájl elmentésekor az új beállítások azonnal, **futási időben** életbe lépnek és a **program újraindítása nélkül** a következő lekérdezés már a friss adatokkal fog történni.

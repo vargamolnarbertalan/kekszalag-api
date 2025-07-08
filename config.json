@@ -1,9 +1,9 @@
 {
-  "url": "https://api.regatta-test.ddc.sze.hu/tabella",
-  "sleep": 5,
+  "url1": "https://api.track.hunsail.hu/tabella",
+  "url2": "https://vihar.hunsail.hu:444/api/hunsail/getverseny/9786/gpstrack",
+  "sleep": 10,
   "payload": {
     "start": 0,
-    "limit": 10000,
-    "_comment": "search: pl hajónév, kormányos, bow number stb"
+    "limit": 10000
   }
 }
