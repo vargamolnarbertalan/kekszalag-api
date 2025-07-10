@@ -140,6 +140,18 @@ while True:
             json.dump(joined_data, f, ensure_ascii=False, indent=2)
             print(
                 f"{timestamp} - [Siker] kekszalag_data.json fájlba a konfigurált lekérdezés eredménye kiírva!")
+            
+        # Filter out entries with null finish_time
+        filtered = [item for item in joined_data if item["finish_time"]]
+
+        # Build the output line
+        line = ', '.join(
+            f'{item["absolute_rank"]}. hely: {item["entity_name"]}' for item in filtered)
+
+        # Write to a file
+        with open("ticker.txt", "w", encoding="utf-8") as f:
+            f.write(line)
+            print(f"{timestamp} - Ticker frissítve.")
 
     except Exception as e:
         print(f"{timestamp} - [Kérés hiba] {e}")
