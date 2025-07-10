@@ -2,12 +2,13 @@
 # Kékszalag API parser by Varga-Molnár Bertalan
 
 ## Futtatás
-A legújabb release letöltése és a *.zip* kicsomagolása. Ezután futtatni kell a `kekszalagApi.exe` alkalmazást. A lekérdezés eredménye a `kekszalag_data.json` fájlban lesz. Ezt kell excelben vagy vMixben, esetleg más feliratozó szoftverben megnyitni.
+A legújabb release letöltése és a *.zip* kicsomagolása. Ezután futtatni kell a `kekszalagApi.exe` alkalmazást. A lekérdezés eredménye a `kekszalag_data.json` és `weather.json` fájlban lesz. Ezt kell excelben vagy vMixben, esetleg más feliratozó szoftverben megnyitni.
 
 ## Konfigurálás
 A `config.json` fájlban lehet beállítani, hogy a következő lekérdezés mit tartalmazzon.
 - url1: Fő Kékszalag API végpont teljes útvonala
 - url2: Vihar API kiegészítő a bow numberhez teljes útvonala
+- url3: met.hu Balaton mért adat táblázat útvonala.
 - sleep: egész szám, másodpercben az az intervallum amilyen gyakran a lekérdezés megtörténjen
 - payload: a HTTP POST metódus body-ja az url1 lekérdezéséhez (ezen belül az API saját kulcsait kell megadni pl limit vagy search)
 

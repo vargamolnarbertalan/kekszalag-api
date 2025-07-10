@@ -1,7 +1,8 @@
 {
   "url1": "https://api.track.hunsail.hu/tabella",
   "url2": "https://vihar.hunsail.hu:444/api/hunsail/getverseny/9786/gpstrack",
-  "sleep": 10,
+  "url3": "https://www.met.hu/idojaras/tavaink/balaton/mert_adatok/main.php",
+  "sleep": 6,
   "payload": {
     "start": 0,
     "limit": 10000
