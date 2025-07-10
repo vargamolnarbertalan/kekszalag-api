@@ -96,9 +96,15 @@ while True:
         payload = config["payload"]
 
         res1 = requests.post(url, headers=headers, json=payload)
-        if res1.status_code != 200:
-            print("Hiba az első API lekérdezésénél:", res1.text)
-            exit()
+        apiStatus = res1.status_code
+        while apiStatus != 200:
+            time.sleep(2)
+            res1 = requests.post(url, headers=headers, json=payload)
+            apiStatus = res1.status_code
+            if apiStatus != 200:
+                print("Hiba az első API lekérdezésénél:", res1.text)
+            else:
+                print("Első lekérdezés sikeres!")
 
         data1 = res1.json().get("results", [])
 
